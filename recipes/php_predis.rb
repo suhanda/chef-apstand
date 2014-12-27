@@ -59,7 +59,3 @@ end
 link "/etc/php5/fpm/conf.d/20-redis.ini" do
     to "#{node['php']['ext_conf_dir']}/redis.ini"
 end
-
-service "php5-fpm" do
-  action :restart
-end
